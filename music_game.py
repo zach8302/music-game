@@ -11,6 +11,7 @@ class Player():
         self.bass = 0
         self.drums = 0
         self.fame = 0
+        self.equipment = 0
         self.money = 200
 
     def singing_lesson(self):
@@ -53,6 +54,9 @@ class Player():
         draft = Song(name, quality, 0)
         return draft
 
+class Shop():
+    def __init__(self):
+        self.items = []
 
 class Song():
     def __init__(self, name, quality, hype):
